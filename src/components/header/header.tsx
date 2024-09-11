@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import Logo from "@/components/logo";
+import Logo from "~/components/logo";
 const menu = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ export default function Header() {
       <div
         className={
           (menuOpen ? "flex" : "hidden") +
-          " absolute top-[100%] min-h-[45vh] w-full flex-col items-center justify-center gap-10 border-b-2 bg-white md:static md:col-span-2 md:flex md:min-h-0 md:flex-row md:justify-between md:border-none"
+          " absolute top-[100%] min-h-[45vh] w-full flex-col items-center justify-center gap-10 border-b-2 bg-white md:static md:col-span-2 md:flex md:min-h-0 md:flex-row md:justify-between md:border-none md:px-16"
         }
       >
         <ul className="flex flex-col items-center justify-center space-y-5 font-bold md:flex-row md:space-x-12 md:space-y-0">

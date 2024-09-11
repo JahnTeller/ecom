@@ -1,7 +1,13 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
+  const [email, setEmail] = React.useState("");
+  const handleSubmit = () => {
+    //Trigger mail sended alert
+    setEmail("");
+  };
   return (
     <div className="flex flex-col items-center justify-center border-t-2 md:w-screen md:flex-col md:pt-4">
       <div className="m-16 flex flex-col gap-6 md:mb-10 md:grid md:grid-cols-4 md:border-b-2 md:pb-12">
@@ -40,13 +46,20 @@ export default function Footer() {
         </ul>
         <div className="md:space-y-10">
           <div className="text-[#9F9F9F]">New Letter</div>
-          <div className="flex flex-col gap-4 lg:flex-row">
-            <input
-              type="email"
-              className="border-b-2 border-b-black"
-              placeholder="Enter Email Here!"
-            ></input>
-            <button className="border-b-2 border-b-black font-bold">
+          <div className="flex flex-col gap-4">
+            <form className="">
+              <input
+                type="email"
+                className="border-b-2 border-b-black"
+                placeholder="Enter Email Here!"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+              />
+            </form>{" "}
+            <button
+              className="max-w-fit border-b-2 border-b-black font-bold"
+              onClick={handleSubmit}
+            >
               SUBSCRIBE
             </button>
           </div>

@@ -42,13 +42,13 @@ export default function Header() {
   }
 
   return (
-    <nav className="relative top-[100%] z-10 flex h-24 w-full flex-col py-5 text-black lg:flex-row lg:items-center lg:justify-between lg:gap-3 lg:px-10">
+    <header className="relative top-[100%] z-10 flex h-24 w-full flex-col bg-white py-5 text-black lg:flex-row lg:items-center lg:justify-between lg:gap-3 lg:px-10">
       <Link
-        href="/#"
+        href="/"
         className="absolute left-2 top-1/3 flex text-2xl lg:relative lg:top-0"
       >
         <Logo />
-        <div className="font-bold">Furniture</div>
+        <div className="font-bold">Furniro</div>
       </Link>
       <ul
         className={
@@ -154,6 +154,6 @@ export default function Header() {
       >
         {isMenuClose ? menu : closeMenu}
       </button>
-    </nav>
+    </header>
   );
 }

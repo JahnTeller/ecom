@@ -9,10 +9,10 @@ export default function Footer() {
     setEmail("");
   };
   return (
-    <div className="flex flex-col items-center justify-center border-t-2 md:w-screen md:flex-col md:pt-4">
+    <footer className="flex flex-col items-center justify-center border-t-2 md:flex-col md:pt-4">
       <div className="m-16 flex flex-col gap-6 md:mb-10 md:grid md:grid-cols-4 md:border-b-2 md:pb-12">
         <div className="pr-20 md:space-y-4">
-          <div>Furniture</div>
+          <div>Furniro</div>
           <p className="text-[#9F9F9F]">
             400 University Drive Suite 200 Coral Gables, FL 33134 USA
           </p>
@@ -65,9 +65,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="mb-10">
-        © Copyright © 2024 Furniture. All rights reverved
-      </p>
-    </div>
+      <p className="mb-10">© Copyright © 2024 Furniro. All rights reverved</p>
+    </footer>
   );
 }

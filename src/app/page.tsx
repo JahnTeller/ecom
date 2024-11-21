@@ -1,7 +1,8 @@
 import { eq } from "drizzle-orm";
-import Link from "next/link";
 import Banner from "~/components/banner/banner";
 import Hero from "~/components/hero";
+import ItemGrid from "~/components/itemgrid";
+import Share from "~/components/share";
 import { db } from "~/server/db";
 import { products, images, productDetails } from "~/server/db/schema";
 export const dynamic = "force-dynamic";
@@ -18,6 +19,8 @@ export default async function HomePage() {
     <main>
       <Banner />
       <Hero />
+      <ItemGrid />
+      <Share />
     </main>
   );
 }

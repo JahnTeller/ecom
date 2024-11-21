@@ -6,8 +6,8 @@ import Header from "~/components/header/header";
 import Footer from "~/components/footer/footer";
 
 export const metadata: Metadata = {
-  title: "Furniture",
-  description: "Furniture Shop",
+  title: "Furniro",
+  description: "Furniro Shop",
   icons: [{ rel: "icon", url: "/img.png" }],
 };
 
@@ -16,9 +16,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body className="w-screen">
+      <body className="m-auto max-w-[2000px]">
         <Header />
-        <div>{children}</div>
+        {children}
         <Footer />
       </body>
     </html>

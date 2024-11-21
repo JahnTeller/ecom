@@ -7,3 +7,19 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+input[type="radio"]:checked + label {
+  @apply bg-[#B88E2F] text-white; /* Change background and text color when checked */
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide the arrows in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
